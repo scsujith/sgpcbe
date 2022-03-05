@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SreeGuruvayoorapaPatterns Gallery</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript" src="dist/js/jquery.flex-photo-gallery.js"></script>
+        <link rel="stylesheet" type="text/css" href="dist/css/jquery.flex-photo-gallery.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lobster+Two" rel="stylesheet">
+    </head>
+    <style media="screen">
+      #gallery{
+        overflow: visible!important;
+        padding: 10px;
+    background: rgb(226, 251, 253);
+      }
+      body{
+        background:#fff;
+margin:0px;
+      }
+      .header{
+        width:100%;
+
+        background: rgb(15,217,184);
+background: linear-gradient(180deg, rgba(15,217,184,1) 0%, rgba(0,212,255,1) 100%);
+display: flex;
+    justify-content: center;
+      }
+      .header h4{
+            font-size: 1.5rem;
+      }
+      .header h4 a{
+        color:#fff;
+        font-family:'Abril Fatface', Arial;
+        text-decoration: none;
+      }
+    </style>
+    <body>
+      <div class="header">
+      <h4><a href="http://www.sreeguruvayoorappapatterns.com/">  Sree Guruvayoorappa Patterns Gallery</a></h4>
+      </div>
+        <div id="gallery"></div>
+    </body>
+</html>
+
+<script>
+    $(document).ready(function() {
+        $('#gallery').flexPhotoGallery({
+            imageArray: imageArray,
+            isViewImageOnClick: true
+        });
+    });
+
+
+    var imageArray =
+    [
+        {
+            "url": "img/gallery/1.jpg",
+            "width": 1600,
+            "height": 1010
+        },
+        {
+            "url": "img/gallery/2.jpg",
+            "width": 1600,
+            "height": 1025
+        },
+        {
+            "url": "img/gallery/3.jpg",
+            "width": 1600,
+            "height": 1015
+        },
+        {
+            "url": "img/gallery/4.jpg",
+            "width": 1600,
+            "height": 1195
+        },
+        {
+            "url": "img/gallery/5.jpg",
+            "width": 1600,
+            "height": 800
+        },
+        {
+            "url": "img/gallery/6.jpg",
+            "width": 1500,
+            "height": 945
+        },
+        {
+            "url": "img/gallery/7.jpg",
+            "width": 1600,
+            "height": 1060
+        },
+        {
+            "url": "img/gallery/8.jpg",
+            "width": 900,
+            "height": 950
+        },
+        {
+            "url": "img/gallery/9.jpg",
+            "width": 935,
+            "height": 1400
+        },
+        {
+            "url": "img/gallery/10.jpg",
+            "width": 1055,
+            "height": 1100
+        },
+        {
+            "url": "img/gallery/11.jpg",
+            "width": 1000,
+            "height": 1380
+        },
+        {
+            "url": "img/gallery/12.jpg",
+            "width": 1100,
+            "height": 880
+        },
+        {
+            "url": "img/gallery/13.jpg",
+            "width": 1000,
+            "height": 810
+        },
+        {
+            "url": "img/gallery/14.jpg",
+            "width": 1510,
+            "height": 1000
+        },
+        {
+            "url": "img/gallery/15.jpg",
+            "width": 900,
+            "height": 1060
+        },
+        {
+            "url": "img/gallery/16.jpg",
+            "width": 1600,
+            "height": 1000
+        }
+    ];
+</script>
